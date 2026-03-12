@@ -1,7 +1,5 @@
 public class Podcast extends MediaItem implements Playable{
     private String host;
-    private String title;
-    private int durationSeconds;
 
     public Podcast(String title, String host, int durationSeconds){
         super(title, durationSeconds);
@@ -16,13 +14,4 @@ public class Podcast extends MediaItem implements Playable{
         System.out.println("Afspiller podcast: " +  getTitle() + " " + getHost() + "(" + getDurationSeconds() + ")");
     }
 
-    @Override
-    public String getTitle(){
-        return title;
-    }
-
-    @Override
-    public int getDurationSeconds(){
-        return durationSeconds;
-    }
 }

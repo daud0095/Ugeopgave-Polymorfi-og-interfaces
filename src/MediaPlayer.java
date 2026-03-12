@@ -23,7 +23,10 @@ public class MediaPlayer {
     }
 
     public void printPlaylist(){
-        System.out.println("Title: " );
+        System.out.println("Playlist");
+        for(Playable p : playables){
+            System.out.println("Title: " + p.getTitle() + " - " + p.getDurationSeconds());
+        }
     }
-//h
+
 }
